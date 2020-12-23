@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Box } from '@material-ui/core';
+import Nav from './Nav';
 
 class Homepage extends Component {
   state = {
@@ -13,11 +14,12 @@ class Homepage extends Component {
 
   render(){
     return (
-      <div class="whole page">
-        <Box my={2} mx={2}>
+      <Container border={1}>
+        <Box my={2} mx={2} border={1}>
+          <Nav />
           {this.currentPage()}
         </Box>
-      </div>
+      </Container>
     )
   }
 }
