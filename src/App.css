@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  background-image: url("./images/main-background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-page {
+  margin: 5%;
+  width: 100%;
+}
+
+main {
+  color: white;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  cursor: scroll;
+}
+
+.main-background{
+  width: 90%;
+  height: 90vh;
+  margin: 5vh 5%;
+  position: absolute;
+  background-color: black;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.main-background-left{
+  position: absolute;
+  left:-10%;
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  transform: skewX(-20deg)translateX(-30%);
+}
+
+#root {
+  height: 100%;
+}

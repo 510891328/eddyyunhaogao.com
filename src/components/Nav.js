@@ -1,12 +1,23 @@
-import {AppBar, Tabs, Tab} from 'material-ui'
+import '../styles/Nav.css'
 
-function Nav() {
+function Nav({navController, current}) {
+
   return (
-    <AppBar>
-      <Tab label="&nbsp;Item 1&nbsp;" />
-      <Tab label="&nbsp;Item 2&nbsp;" />
-      <Tab label="&nbsp;Item 3&nbsp;" />
-      <Tab label="&nbsp;Item 4&nbsp;" />
-    </AppBar>
+    <nav>
+      <ul>
+        <li onClick={() => {navController('intro')}}>Home</li>
+        <li onClick={() => {navController('about')}}>About</li>
+        <li onClick={() => {navController('portfolio')}}>Portfolio</li>
+        <li onClick={() => {navController('blog')}}>Blog</li>
+      </ul>
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+      </ul>
+    </nav>
   )
 }
+
+export default Nav;
