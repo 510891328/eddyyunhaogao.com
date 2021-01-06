@@ -1,5 +1,6 @@
 import Homepage from './components/Homepage';
-import './App.css'
+import './App.css';
+
 function App() {
   return (
       <Homepage />
