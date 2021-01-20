@@ -1,4 +1,3 @@
-import '../styles/Nav.css';
 import GitHub from '../images/icons/GitHub.png';
 import LinkedIn from '../images/icons/LinkedIn.png';
 import Medium from '../images/icons/Medium.png';

@@ -1,0 +1,46 @@
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 24pt;
+
+}
+
+ul:last-of-type li{
+  margin-right: 10px;
+}
+
+.left-nav {
+  background-color: black;
+  padding-right: 10%;
+}
+
+.right-nav {
+  background-color: skyblue;
+  padding-left: 5%;
+}
+
+.current-page {
+  background-color: skyblue;
+}
+
+ul:last-of-type li img{
+  max-width: 40px;
+  max-height: 40px;
+  transform: translateY(5px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  padding: 0;
+}

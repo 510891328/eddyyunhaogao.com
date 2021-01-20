@@ -1,0 +1,13 @@
+.about-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  width: 50%;
+  margin: 5%;
+}
+
+.right{
+  margin: 5%;
+}

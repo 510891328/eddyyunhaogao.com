@@ -46,13 +46,12 @@ class Homepage extends Component {
   render(){
     return (
         <main onWheel={this.scrollHandler} >
-          <div  className="main-background">
-            <div className="main-background-left"></div>
-            <div className="main-background-right"></div>
-          </div>
           <div className="main-page">
+            <Intro />
             <Nav navController={this.navController} current={this.state.current} key={this.state.current} />
-            {this.currentPage()}
+            <About />
+            <Portfolio />
+            <Blog />
           </div>
         </main>
     )
