@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <div>
-        <h2>{data.firstName}{data.lastName} ({data.nickName})</h2>
+        <h3>{data.firstName}{data.lastName} ({data.nickName})</h3>
         <div>
           {data.programmingLanguage.primary.map( (pri, i) => <div key={i}>{pri}</div>)}
           {data.programmingLanguage.others.map( (oth, i) => <div key={i}>{oth}</div>)}

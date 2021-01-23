@@ -19,20 +19,31 @@ class Homepage extends Component {
     return (
         <main>
           <Nav />
-          <div className="intro" id="intro">
-            <Intro />
-          </div>           
-          <div className="about" id="about">
-            <span className="for-nav"></span>
-            <About />
+          <div>
+            <div className="intro" id="intro">
+              <Intro />
+            </div>      
           </div>
-          <div className="portfolio" id="portfolio">
-            <span className="for-nav"></span>
-            <Portfolio />
+          <div id="about">
+            <h1>About</h1>
+            <div className="about">
+              <span className="for-nav"></span>
+              <About />
+            </div>
           </div>
-          <div className="blog" id="blog">
-            <span className="for-nav"></span>
-            <Blog />
+          <div id="portfolio">
+            <h1>Projects</h1>
+            <div className="portfolio">
+              <span className="for-nav"></span>
+              <Portfolio />
+            </div>
+          </div>
+          <div id="blog"> 
+            <h1>Blogs</h1>
+            <div className="blog">
+              <span className="for-nav"></span>
+              <Blog />
+            </div>
           </div>
         </main>
     )

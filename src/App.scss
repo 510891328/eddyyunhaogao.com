@@ -8,8 +8,29 @@
 body::-webkit-scrollbar {  width: 0px;}
 :root {  scrollbar-width: none !important;}
 
-main > div {
-    height: 100vh;
+main > div{
+    min-height: 100vh;
+    & > h1{
+        font-size: 40pt;
+        margin: 0;
+        text-align: center;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        text-decoration: underline;
+    }
+}
+
+#about {
+    background-color: rgb(108, 200, 243);
+}
+
+#portfolio{
+    background-color: lightgrey;
+    height: auto;
+}
+
+#blog {
+    background-color: white;
 }
 
 .intro{
@@ -20,8 +41,7 @@ main > div {
 
 .about{
     @include flexWrapper();
-    background-color: rgb(108, 200, 243);
-    height: 100vh;
+    height: 60vh;
     & > div{
         width: 30%;
         text-align: center;
@@ -33,13 +53,15 @@ main > div {
         }
     }
 }
+
 .portfolio{
     height: auto;
 }
 
+
+
 .portfolio-holder {
     @include flexWrapper();
-    background-color: lightgrey;
     padding-left: 10%;
     & > div {
         width: 40%;
