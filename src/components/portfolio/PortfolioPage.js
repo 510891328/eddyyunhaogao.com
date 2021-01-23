@@ -14,7 +14,7 @@ const renderProjects = () => {
 
 function Portfilio() {
   return (
-    <div>
+    <div className="portfolio-holder">
       {renderProjects()}
     </div>
   )

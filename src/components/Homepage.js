@@ -11,46 +11,27 @@ class Homepage extends Component {
     allPage: ['intro', 'about', 'portfolio', 'blog']
   }
 
-  currentPage = () => {
-    switch (this.state.current) {
-      case 'intro':
-        return <Intro />
-      case 'about':
-        return <About />
-      case 'portfolio':
-        return <Portfolio />
-      case 'blog':
-        return <Blog />
-      default:
-        return <Intro />
-    }
-  }
-
-  scrollHandler = (e) => {
-    const scroll = e.nativeEvent.deltaY
-    const currentIdx = this.state.allPage.findIndex(num => this.state.current === num)
-
-    if(currentIdx < 3 && scroll > 0){
-      this.setState({current: this.state.allPage[currentIdx + 1]})
-    }
-
-    if(currentIdx > 0 && scroll < 0){
-      this.setState({current: this.state.allPage[currentIdx - 1]})
-    }
-  }
-
   navController = (selection) => {
     this.setState({current: selection})
   }
 
   render(){
     return (
-        <main onWheel={this.scrollHandler} >
-          <div className="main-page">
+        <main>
+          <Nav />
+          <div className="intro" id="intro">
             <Intro />
-            <Nav navController={this.navController} current={this.state.current} key={this.state.current} />
+          </div>           
+          <div className="about" id="about">
+            <span className="for-nav"></span>
             <About />
+          </div>
+          <div className="portfolio" id="portfolio">
+            <span className="for-nav"></span>
             <Portfolio />
+          </div>
+          <div className="blog" id="blog">
+            <span className="for-nav"></span>
             <Blog />
           </div>
         </main>

@@ -1,0 +1,43 @@
+
+.larger-nav {
+    position: fixed;
+    top:25%;
+    margin-left: 3%;
+    list-style-type: none;
+    display: block;
+
+    @media screen and (max-width: 790px) {
+        display: none;
+    }
+
+    li a.active {
+        color: white;
+    }
+}
+
+.scroll-line{
+    background-color: black;
+    width: 50px;
+    margin: 80%;
+    margin-left: -8%;
+    height: 1px;
+    transform: rotate(90deg);
+}
+
+.small-nav{
+    list-style-type: none;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: auto;
+    li{
+        margin: 7px 0;
+        height: 2px;
+        width: 30px;
+        background-color: black;
+    }
+
+    @media screen and (min-width: 790px){
+        display: none;
+    }
+}
