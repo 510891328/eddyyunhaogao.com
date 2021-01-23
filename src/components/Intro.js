@@ -1,6 +1,4 @@
 import '../styles/Intro.scss';
-import introback1 from '../images/introback1.jpg';
-import introback2 from '../images/introback2.jpg';
 
 function Intro() {
   return (

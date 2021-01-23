@@ -7,7 +7,7 @@ import Project from './Project';
 const renderProjects = () => {
     const projects = [];
     for(const project in portfolios){
-      projects.push(<Project project={portfolios[project]}/>)
+      projects.push(<Project key={project} project={portfolios[project]}/>)
     }
     return projects;
 }

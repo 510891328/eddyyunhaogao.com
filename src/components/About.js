@@ -1,5 +1,4 @@
 import { data } from '../data.js';
-import Nav from './Nav';
 
 function About() {
   return (
@@ -7,8 +6,8 @@ function About() {
       <div>
         <h2>{data.firstName}{data.lastName} ({data.nickName})</h2>
         <div>
-          {data.programmingLanguage.primary.map( pri => <div>{pri}</div>)}
-          {data.programmingLanguage.others.map( oth => <div> {oth} </div>)}
+          {data.programmingLanguage.primary.map( (pri, i) => <div key={i}>{pri}</div>)}
+          {data.programmingLanguage.others.map( (oth, i) => <div key={i}>{oth}</div>)}
         </div>
       </div>
       <div>

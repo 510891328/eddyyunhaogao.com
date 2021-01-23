@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import Blog from './Blog';
 
-function Blog() {
+const renderBlog = (blog, i) => {
+  return <Blog blog={blog} key={i}/>
+}
+
+function Blogs() {
   const [blogs, setBlogs] = useState([])
+
   useEffect( () => {
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@as510891328')
    .then((res) => res.json())
@@ -9,13 +15,10 @@ function Blog() {
      setBlogs(data.items);
    })
  },[]);
-
- console.log(blogs)
+ 
   return (
-    <div>
-      This is blog Page!!!
-    </div>
+      blogs.map( (blog, i)=> renderBlog(blog, i) )
   )
 }
 
-export default Blog;
+export default Blogs;
