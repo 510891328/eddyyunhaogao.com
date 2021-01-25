@@ -8,10 +8,10 @@ import Medium from '../images/icons/Medium.png';
 export default function Footer() {
     return (
         <>
-            <div><img src={GitHub} alt="GitHub"/></div>
-            <div><img src={Gmail} alt="Gmail"/></div>
-            <div><img src={LinkedIn} alt="LinkedIn"/></div>
-            <div><img src={Medium} alt="Medium"/></div>
+            <div><a href="https://github.com/510891328" rel="noreferrer" target="_blank" ><img src={GitHub} alt="GitHub" /></a></div>
+            <div><a href="https://www.linkedin.com/in/eddy-yunhao-gao/" rel="noreferrer" target="_blank" ><img src={LinkedIn} alt="LinkedIn" /></a></div>
+            <div><a href="https://as510891328.medium.com/" rel="noreferrer" target="_blank"><img src={Medium} alt="Medium" /></a></div>
+            <div><a href="mailto:eddyyunhaogao@gmail.com"><img src={Gmail} alt="Gmail" /></a></div>
         </>
     )
 }
