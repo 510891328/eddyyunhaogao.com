@@ -4,6 +4,8 @@ import About from './About';
 import Blog from './blogs/BlogPage';
 import Portfolio from './portfolio/PortfolioPage';
 import Intro from './Intro';
+import Contact from './Contact';
+import Footer from './Footer';
 
 class Homepage extends Component {
   state = {
@@ -44,6 +46,9 @@ class Homepage extends Component {
               <span className="for-nav"></span>
               <Blog />
             </div>
+          </div>
+          <div id="footer">
+            <Footer />
           </div>
         </main>
     )

@@ -4,10 +4,12 @@ const renderBlogCategories = (categories) => {
 
 export default function Blog({blog}){
     return(
-        <div>
-            <div><a href={blog.link} rel="noreferrer" target='_blank'><img src={blog.thumbnail} alt={blog.title} width="400px"/></a></div>
-            <h3><a href={blog.link} rel="noreferrer" target='_blank'>{blog.title}</a></h3>
-            <div>{renderBlogCategories(blog.categories)}</div>
+        <div className="single-blog">
+            <div>
+                <div><a href={blog.link} rel="noreferrer" target='_blank'><img src={blog.thumbnail} alt={blog.title} width="400px"/></a></div>
+                <h3><a href={blog.link} rel="noreferrer" target='_blank'>{blog.title}</a></h3>
+                <div className="category">{renderBlogCategories(blog.categories)}</div>
+            </div>
         </div>
     )
 }
