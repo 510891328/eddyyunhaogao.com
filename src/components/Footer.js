@@ -1,4 +1,3 @@
-import { Link } from 'react-scroll';
 import GitHub from '../images/icons/GitHub.png';
 import Gmail from '../images/icons/Gmail.png';
 import LinkedIn from '../images/icons/LinkedIn.png';
