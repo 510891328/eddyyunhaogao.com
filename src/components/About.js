@@ -11,8 +11,8 @@ function About() {
           {data.programmingLanguage.others.map( (oth, i) => <div key={i} className="language">{oth}</div>)}
         </div>
       </div>
-      <div className="about-p">
-        {data.about}
+      <div>
+        <p>{data.about}</p>
       </div>
     </>
   )

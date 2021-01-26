@@ -21,7 +21,7 @@ main > div{
 }
 
 #about {
-    background-color: rgb(108, 200, 243);
+    background-color: rgb(106, 195, 236);
 }
 
 #portfolio{
@@ -30,7 +30,7 @@ main > div{
 }
 
 #blog {
-    background-color: white;
+
 }
 
 #footer {
@@ -39,7 +39,7 @@ main > div{
     display: flex;
     justify-content: space-around;
     min-height: auto;
-    background-color: rgb(108, 200, 243);
+    background-color: lightblue;
     img {
         width: 20%;
     }
@@ -68,6 +68,9 @@ main > div{
             width: 60%;
             padding:0;
         }
+    }
+    p {
+        text-align: left;
     }
 }
 

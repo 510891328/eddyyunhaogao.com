@@ -1,5 +1,6 @@
 
 .larger-nav {
+    color: rgb(28, 140, 168);
     position: fixed;
     top:25%;
     margin-left: 3%;
@@ -16,7 +17,7 @@
 }
 
 .scroll-line{
-    background-color: black;
+    background-color: rgb(28, 140, 168);
     width: 50px;
     margin: 80%;
     margin-left: -8%;
@@ -34,7 +35,7 @@
         margin: 7px 0;
         height: 2px;
         width: 30px;
-        background-color: black;
+        background-color: rgb(28, 140, 168);
     }
 
     @media screen and (min-width: 790px){
