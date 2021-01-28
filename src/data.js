@@ -17,16 +17,33 @@ export const data = {
 export const portfolios = {
   feeders: {
     language: ['React', 'Ruby on Rails', 'Redux'],
+    github: {
+      frontEnd: 'https://github.com/510891328/feeders',
+      backEnd: 'https://github.com/510891328/feeders-back-end'
+    },
+    demo: 'https://www.youtube.com/watch?v=4GbD2IQmzOY&t=136s',
+    site: 'https://stoic-hermann-9bd556.netlify.app/',
     image: FeedersScreen
   },
 
   flatironMovie: {
     language: ['React', 'Ruby on Rails'],
+    github: {
+      frontEnd: 'https://github.com/510891328/Market-Tracking-App-Front-End',
+      backEnd: 'https://github.com/510891328/Market-Tracking-App-API'
+    },
+    demo: 'https://www.youtube.com/watch?v=jzcnAkTKhgc&feature=youtu.be',
+    site: 'https://5fd2e90ae0b60e00076cf2a1--gifted-yonath-be1d3c.netlify.app/',
     image: FlatironMovieScreen
   },
 
   marketTrackingApp:{
     language: ['JavaScript', 'Ruby on Rails'],
+    github: {
+      frontEnd: 'https://github.com/510891328/Flatiron-Movie',
+      backEnd: 'https://github.com/510891328/Flatiron-Movie-Back-End'
+    },
+    demo: 'https://www.youtube.com/watch?v=SHVDmjdvG-8&feature=youtu.be',
     image: MarketTrackingAppScreen
   }
 }
