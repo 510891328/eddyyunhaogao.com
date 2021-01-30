@@ -1,0 +1,11 @@
+.gits, .dev-langs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border:1px solid black;
+}
+
+.project-image {
+    margin: 2%;
+    max-height: 35vh;
+}
