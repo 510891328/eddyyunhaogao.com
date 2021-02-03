@@ -1,5 +1,5 @@
 const renderBlogCategories = (categories) => {
-    return categories.map( (category,i) => <span className="categories" key={i}>#<i>{category}</i></span>)
+    return categories.map( (category,i) => `#<i>{category}</i>`)
 }
 
 export default function Blog({blog}){
