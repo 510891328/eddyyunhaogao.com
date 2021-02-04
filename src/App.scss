@@ -133,6 +133,8 @@ main > div{
 
     .category {
         min-height: 7vh;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     a {
