@@ -15,7 +15,7 @@ class Homepage extends Component {
     window.addEventListener('scroll', () => {
       console.log("Scroll", window.scrollY)
       console.log("Height", window.innerHeight)
-      if(window.scrollY >= window.innerHeight) {
+      if(window.scrollY >= window.innerHeight/1.5) {
         this.setState( {intro: true})
       }else{
         this.setState( {intro: false})
