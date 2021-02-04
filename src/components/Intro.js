@@ -1,6 +1,13 @@
 import '../styles/Intro.scss';
-
+import { useEffect } from 'react';
 function Intro() {
+  
+  useEffect(()=> {
+    console.log(document.body.scrollHeight)
+    console.log(window.innerHeight)
+    console.log(window.scrollY)
+  },[])
+
   return (
       <>
         <div className="intro-background"></div>

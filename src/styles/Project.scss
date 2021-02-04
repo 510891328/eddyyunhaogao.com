@@ -29,5 +29,10 @@
 .gits {
     & > div {
         margin: 10px;
+        transition: 1.5s;
+    }
+
+    & > div:hover {
+        transform:scale(1.2)
     }
 }

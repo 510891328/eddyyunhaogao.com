@@ -9,18 +9,23 @@ import Footer from './Footer';
 
 class Homepage extends Component {
   state = {
-    current: 'intro',
-    allPage: ['intro', 'about', 'portfolio', 'blog']
+    intro: false
   }
-
-  navController = (selection) => {
-    this.setState({current: selection})
+  componentDidMount(){
+    window.addEventListener('scroll', () => {
+      console.log("Scroll", window.scrollY)
+      console.log("Height", window.innerHeight)
+      if(window.scrollY >= window.innerHeight) {
+        this.setState( {intro: true})
+      }else{
+        this.setState( {intro: false})
+      }
+    }) 
   }
-
   render(){
     return (
         <main>
-          <Nav />
+          <Nav intro={this.state.intro}/>
           <div>
             <div className="intro" id="intro">
               <Intro />
