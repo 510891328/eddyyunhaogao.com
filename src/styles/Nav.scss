@@ -16,6 +16,8 @@
 
     @media screen and (max-width: 790px) {
         bottom: 10%;
+        left: 0;
+        margin-left:0;
         &.active{
             transform:translateX(-300px)
         }

@@ -8,14 +8,18 @@ function Nav( {intro, navController, current} ) {
     setClick(!click)
   }
 
+  const hideNav = () => {
+    setClick(false)
+  }
+
   return (
     <nav>
       <ul className={`larger-nav ${intro? "active" : null} ${click? "clickNav" : null}`}>
-        <li><Link activeClass="active" spy={true} to="intro" smooth={true} duration={700}>^ TOP</Link></li>
-        <li><Link activeClass="active" spy={true} to="about" smooth={true} duration={700} >About</Link></li>
-        <li><Link activeClass="active" spy={true} to="portfolio" smooth={true} duration={700}>Portfolio</Link></li>
-        <li><Link activeClass="active" spy={true} to="blog" smooth={true} duration={700}>Blog</Link></li>
-        <li><Link activeClass="active" spy={true} to="contact" smooth={true} duration={700}>Contact</Link></li>
+        <li><Link activeClass="active" spy={true} to="intro" smooth={true} duration={700} onClick={hideNav}>^ TOP</Link></li>
+        <li><Link activeClass="active" spy={true} to="about" smooth={true} duration={700} onClick={hideNav}>About</Link></li>
+        <li><Link activeClass="active" spy={true} to="portfolio" smooth={true} duration={700} onClick={hideNav}>Portfolio</Link></li>
+        <li><Link activeClass="active" spy={true} to="blog" smooth={true} duration={700} onClick={hideNav}>Blog</Link></li>
+        <li><Link activeClass="active" spy={true} to="contact" smooth={true} duration={700} onClick={hideNav}>Contact</Link></li>
       </ul>
       <ul className={`${intro? null : "active" } small-nav`} onClick={displayNav}>
         <li></li>
