@@ -52,9 +52,9 @@ class Homepage extends Component {
               <Blog />
             </div>
           </div>
-          {/* <div>
+          <div id="contact">
             <Contact />
-          </div> */}
+          </div>
           <div id="footer">
             <Footer />
           </div>

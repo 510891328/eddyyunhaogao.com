@@ -1,0 +1,70 @@
+#contact {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    ul{
+        overflow: hidden;
+        list-style: none;
+        z-index: 1;
+        height: auto;
+        width: auto;
+        padding: 0;
+        div{
+            overflow: hidden;
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            opacity: 1;
+            li{
+                overflow: hidden;
+                height: 100vh;
+                width: 100%;
+                float:right;
+            }
+            &:nth-child(1) li{
+                background-color: black;
+                width: 100%;
+                transform: skew(35deg) translateX(60vw);
+                z-index: 3;
+            }
+            &:nth-child(2) li{
+                background-color: lightgreen;
+                width: 100%;
+                z-index: 2;
+                transform: skew(35deg) translateX(70vw);
+            }
+            &:nth-child(3) li{
+                background-color: grey;
+                width: 100%;
+                z-index: 1;
+                transform: skew(35deg) translateX(80vw);
+            }
+        }
+    }
+}
+
+@mixin cont{
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 30%;
+    position:absolute;
+    margin-top: 50vh;
+    padding: 10px 20px;
+    transition: 1.5s;
+    @media screen and (max-width: 760px) {
+        margin-left: 10%;
+        margin-top: 60vh;
+    }
+}
+
+.contact-me {
+    @include cont;
+}
+.contact-me-bg{
+    a{
+        @include cont;
+        color:transparent;
+        border: 2px solid black;
+        border-radius: 50px;
+    }
+}

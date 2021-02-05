@@ -30,7 +30,8 @@ main > div{
 }
 
 #footer {
-    margin: 6vh 0 0 0;
+    position: relative;
+    margin: 0 0 0 0;
     padding:2vh;
     display: flex;
     justify-content: space-around;

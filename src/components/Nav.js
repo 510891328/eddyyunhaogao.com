@@ -15,6 +15,7 @@ function Nav( {intro, navController, current} ) {
         <li><Link activeClass="active" spy={true} to="about" smooth={true} duration={700} >About</Link></li>
         <li><Link activeClass="active" spy={true} to="portfolio" smooth={true} duration={700}>Portfolio</Link></li>
         <li><Link activeClass="active" spy={true} to="blog" smooth={true} duration={700}>Blog</Link></li>
+        <li><Link activeClass="active" spy={true} to="contact" smooth={true} duration={700}>Contact</Link></li>
       </ul>
       <ul className={`${intro? null : "active" } small-nav`} onClick={displayNav}>
         <li></li>
