@@ -7,7 +7,7 @@ export const data = {
   lastName: "Gao",
   nickName: "Eddy",
   programmingLanguage: {
-    primary: ["JavaScript", "React.js", "Redux.js"],
+    primary: ["JavaScript", "React.js", "Redux.js", "Ruby on Rail"],
     others: ["MVC", "Python", "Php", "SQL", "FireBase", "NoSQL", "PostSQL"]
   },
   language: ["English", "Mandarin"],
